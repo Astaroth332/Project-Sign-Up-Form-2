@@ -7,6 +7,8 @@
 
 :root {
     --font-size: 1.2rem;
+    --padding-left: 30px;
+    --prim-color: rgb(97, 37, 37);;
 }
 
 @font-face
@@ -115,10 +117,10 @@ body
 {
     font-family: "FiraSans Bold";
     font-size: var(--font-size);
-    padding-left: 30px;
+    padding-left: var(--padding-left);
+   
   
 }
-
 
 .sign-up-description > div:first-child
 {
@@ -134,36 +136,102 @@ body
 {
     background-color: white;
     width: 100%;
+    padding-left:  var(--padding-left);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 2px 4px rgb(179, 176, 176);
 }
 
 .signup-title
 {
     font-family: "FiraSans Bold";
     font-size: var(--font-size);
-    padding: 15px 30px;
+    padding-bottom: 15px;
+   
 }
 
-.row-form-control div
+.row-form-control 
+{
+   display: flex;
+   gap:50px;
+}
+
+.row-form-control > div
 {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: 200px;
+    gap: 2px;
+    padding-bottom: 12px;
 }
 
-input[type] {
-    width: 30%;
-    padding: 4px 0;
-    border: solid 1px  rgb(206, 203, 203);
+input {
+    outline: none;
+}
+
+input[type] 
+{
+    padding: 4px 2px;
+    border: groove  1px  rgb(206, 203, 203);
     border-radius: 3px;
+    font-size: 14px;
 }
 
-label {
+
+input[type]:focus
+{
+    box-shadow: 0 2px 7px rgb(100, 99, 99);
+    border: solid 1px blue;
+}
+
+input[type="password"]:invalid
+{
+    border: solid 1px red;
+}
+
+label
+{
     font-family: "FiraSans";
-    font-size: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#result-message {
+    padding: 2px 0;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.submit-button
+{
+    padding: var(--padding-left);
 }
 
 
+button 
+{
+    padding: 12px 46px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'FiraSans Bold';
+    color: white;
+    border: none;
+    background-color: var(--prim-color);
+}
 
+.user-status-account
+{
+    font-family: 'FiraSans';
+    padding-left: var(--padding-left);
+    font-size: 16x;
+}
 
+.user-status-account a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--prim-color);
+}
 
 
 

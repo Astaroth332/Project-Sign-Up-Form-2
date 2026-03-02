@@ -27,38 +27,44 @@
         <div class="sign-up-container">
             <div class="sign-up">
                 <div class="signup-title"> Let's do this!</div>
-                <div class="row-form-control">
-                    <div><label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname">
+                <form action="" id="create-account">
+                    <div class="row-form-control">
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" name="fname" maxlength="245" required ="^[a-zA-Z ]+$" >
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label
+                            ><input type="text" id="lname" name="lname" required pattern="^[a-zA-Z ]+$">
+                        </div>
                     </div>
-                    <div><label for="lname">LAST NAME</label
-                        ><input type="text" id="lname">
+                    <div class="row-form-control">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
                     </div>
-                </div>
-                <div class="row-form-control">
-                    <div><label for="email">EMAIL</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div><label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="text" id="phoneNumber">
-                    </div>
-                </div>
-                <div class="row-form-control" >
-                    <div><label for="password">PASSWORD</label>
-                        <input type="text" id="password">
-                    </div>
-                    <div><label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="text" id="confirmPassword">
-                    </div>
-                </div>
+                    <div class="row-form-control">
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required minlength="">
+                            <p id="result-message"></p>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
+                        </div>
+                    </div> 
+                </form>
             </div>
-            <div class="create-btn">
-                <button>Create Account</button>
-            </div>
-            <div class="accsount-exist-link-container">
-                Already have an account? <a href="">Log in</a>
-            </div>
+            <div class="submit-button"><button type="submit" onclick="checkPassword()" form="create-account">Create account</button></div>
+            <div class="user-status-account">Already have an account? <a href=""> Log in</a></div> 
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
