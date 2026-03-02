@@ -1,0 +1,169 @@
+*  
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size: 1.2rem;
+}
+
+@font-face
+{
+    font-family: 'Norse Bold';
+    src: 
+    url("Font/Norse-Bold.woff") format("woff"),
+    url("Font/Norse-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'FiraSans Bold';
+    src: 
+    url("Font/FiraSans-Bold.woff") format("woff"),
+    url("Font/FiraSans-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face
+{
+    font-family: 'FiraSans';
+    src: 
+    url("Font/FiraSans-Regular.woff") format("woff"),
+    url("Font/FiraSans-Regular.woff2") format("woff2");
+    font-weight: bolder;
+    font-style: normal;
+    font-display: swap;
+}
+
+body 
+{
+    display: flex;
+    background-color: rgb(251, 250, 250);
+}
+
+.left-section
+{
+    width: 500px;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url('images/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo-container
+{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    background-color: rgba(0, 0, 0, 0.532);
+}
+
+.logo > img
+{
+    width: 60px;
+    height: 80px;
+}
+
+.logo-text
+{
+    font-family: 'Norse Bold';
+    color: white;
+    font-size: 4rem;
+}
+
+.credit-container 
+{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.834);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+.photo-owner > a 
+{
+    color: rgba(255, 255, 255, 0.834);
+}
+
+
+.right-section
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up-description 
+{
+    font-family: "FiraSans Bold";
+    font-size: var(--font-size);
+    padding-left: 30px;
+  
+}
+
+
+.sign-up-description > div:first-child
+{
+    margin-bottom: 20px;
+}
+
+.sign-up-description > div:last-child
+{
+    margin-bottom: 40px;
+}
+
+.sign-up 
+{
+    background-color: white;
+    width: 100%;
+}
+
+.signup-title
+{
+    font-family: "FiraSans Bold";
+    font-size: var(--font-size);
+    padding: 15px 30px;
+}
+
+.row-form-control div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type] {
+    width: 30%;
+    padding: 4px 0;
+    border: solid 1px  rgb(206, 203, 203);
+    border-radius: 3px;
+}
+
+label {
+    font-family: "FiraSans";
+    font-size: 10px;
+}
+
+
+
+
+
+
+
